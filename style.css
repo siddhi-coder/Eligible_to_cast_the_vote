@@ -1,0 +1,90 @@
+/* Reset default styles and set a background color for the body */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #000;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the content vertically and horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Style the imagebox */
+.imagebox {
+    align-self: flex-end;
+    margin-right: 8vw;
+}
+
+/* Style the main box */
+.box {
+    background-color: #fff;
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px;
+    margin-right: 7vw;
+}
+
+/* Style the result message */
+#result {
+    color: red;
+    padding: 10px 0;
+    font-size: 18px;
+}
+
+/* Style input fields */
+input[type="text"],
+input[type="number"] {
+    font-size: 15px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the submit button */
+button {
+    background-color: #5887e1;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the submit button on hover */
+button:hover {
+    background-color: rgba(0, 0, 0, 0.753);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+
+    .container{
+        display: block;
+    }
+    img{
+        width: 275px;
+    margin-left: 21px;
+    }
+    #result{
+    font-size: 14px;
+    }
+    .box {
+        margin-top: -8px;
+        margin-left: 19px;
+        width: 285px;
+        height: 60vh;
+    }
+}
+
+
